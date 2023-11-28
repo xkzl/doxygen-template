@@ -8,5 +8,7 @@ clean:
 compile:
 	@echo "COMPILE"
 
+assets:
+	@$(MAKE) -C assets
 doxygen:
 	@doxygen
