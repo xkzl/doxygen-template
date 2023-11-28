@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="d9/dd6/_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">![Build<sp/>Status](https://gitlab.com/pages/doxygen/badges/master/build.svg)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Example<sp/>[doxygen]<sp/>documentation<sp/>website<sp/>using<sp/>GitLab<sp/>Pages.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Learn<sp/>more<sp/>about<sp/>GitLab<sp/>Pages<sp/>at<sp/>https://pages.gitlab.io<sp/>and<sp/>the<sp/>official</highlight></codeline>
+<codeline><highlight class="normal">documentation<sp/>https://docs.gitlab.com/ce/user/project/pages/.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;!--<sp/>START<sp/>doctoc<sp/>generated<sp/>TOC<sp/>please<sp/>keep<sp/>comment<sp/>here<sp/>to<sp/>allow<sp/>auto<sp/>update<sp/>--&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;!--<sp/>DON&apos;T<sp/>EDIT<sp/>THIS<sp/>SECTION,<sp/>INSTEAD<sp/>RE-RUN<sp/>doctoc<sp/>TO<sp/>UPDATE<sp/>--&gt;</highlight></codeline>
+<codeline><highlight class="normal">**Table<sp/>of<sp/>Contents**<sp/><sp/>*generated<sp/>with<sp/>[DocToc](https://github.com/thlorenz/doctoc)*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>[GitLab<sp/>CI](#gitlab-ci)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Requirements](#requirements)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Building<sp/>locally](#building-locally)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[GitLab<sp/>User<sp/>or<sp/>Group<sp/>Pages](#gitlab-user-or-group-pages)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Did<sp/>you<sp/>fork<sp/>this<sp/>project?](#did-you-fork-this-project)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Troubleshooting](#troubleshooting)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;!--<sp/>END<sp/>doctoc<sp/>generated<sp/>TOC<sp/>please<sp/>keep<sp/>comment<sp/>here<sp/>to<sp/>allow<sp/>auto<sp/>update<sp/>--&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>GitLab<sp/>CI</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>project&apos;s<sp/>static<sp/>Pages<sp/>are<sp/>built<sp/>by<sp/>[GitLab<sp/>CI][ci],<sp/>following<sp/>the<sp/>steps</highlight></codeline>
+<codeline><highlight class="normal">defined<sp/>in<sp/>[`.gitlab-ci.yml`](.gitlab-ci.yml):</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">image:<sp/>alpine</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">pages:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>script:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>apk<sp/>update<sp/>&amp;&amp;<sp/>apk<sp/>add<sp/>doxygen</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>doxygen<sp/>doxygen/Doxyfile</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>mv<sp/>doxygen/documentation/html/<sp/>public/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>artifacts:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>paths:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>public</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>only:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>master</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Requirements</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>[Doxygen][]</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>GraphViz<sp/>(dot)<sp/>[optionally]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>generating<sp/>PDFs:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>PDF-LaTeX</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Ghostscript</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`make`<sp/>[on<sp/>*nix]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Building<sp/>locally</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>work<sp/>locally<sp/>with<sp/>this<sp/>project,<sp/>you&apos;ll<sp/>have<sp/>to<sp/>follow<sp/>the<sp/>steps<sp/>below:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Fork,<sp/>clone<sp/>or<sp/>download<sp/>this<sp/>project</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>[Install][]<sp/>Doxygen</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>Generate<sp/>the<sp/>documentation:<sp/>`doxygen<sp/>./doxygen/Doxyfile`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>generated<sp/>HTML<sp/>will<sp/>be<sp/>located<sp/>in<sp/>the<sp/>location<sp/>specified<sp/>by<sp/>the<sp/>Doxyfile,</highlight></codeline>
+<codeline><highlight class="normal">in<sp/>this<sp/>case<sp/>`doxygen/documentation/html`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Read<sp/>more<sp/>at<sp/>Doxygen&apos;s<sp/>[documentation][].</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>GitLab<sp/>User<sp/>or<sp/>Group<sp/>Pages</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>use<sp/>this<sp/>project<sp/>as<sp/>your<sp/>user/group<sp/>website,<sp/>you<sp/>will<sp/>need<sp/>one<sp/>additional</highlight></codeline>
+<codeline><highlight class="normal">step:<sp/>just<sp/>rename<sp/>your<sp/>project<sp/>to<sp/>`namespace.gitlab.io`,<sp/>where<sp/>`namespace`<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">your<sp/>`username`<sp/>or<sp/>`groupname`.<sp/>This<sp/>can<sp/>be<sp/>done<sp/>by<sp/>navigating<sp/>to<sp/>your</highlight></codeline>
+<codeline><highlight class="normal">project&apos;s<sp/>**Settings**.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Read<sp/>more<sp/>about<sp/>[user/group<sp/>Pages][userpages]<sp/>and<sp/>[project<sp/>Pages][projpages].</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Did<sp/>you<sp/>fork<sp/>this<sp/>project?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>forked<sp/>this<sp/>project<sp/>for<sp/>your<sp/>own<sp/>use,<sp/>please<sp/>go<sp/>to<sp/>your<sp/>project&apos;s</highlight></codeline>
+<codeline><highlight class="normal">**Settings**<sp/>and<sp/>remove<sp/>the<sp/>forking<sp/>relationship,<sp/>which<sp/>won&apos;t<sp/>be<sp/>necessary</highlight></codeline>
+<codeline><highlight class="normal">unless<sp/>you<sp/>want<sp/>to<sp/>contribute<sp/>back<sp/>to<sp/>the<sp/>upstream<sp/>project.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Troubleshooting</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>CSS<sp/>is<sp/>missing!<sp/>That<sp/>means<sp/>two<sp/>things:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Either<sp/>that<sp/>you<sp/>have<sp/>wrongly<sp/>set<sp/>up<sp/>the<sp/>CSS<sp/>URL<sp/>in<sp/>your<sp/>templates,<sp/>or</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>your<sp/>static<sp/>generator<sp/>has<sp/>a<sp/>configuration<sp/>option<sp/>that<sp/>needs<sp/>to<sp/>be<sp/>explicitly</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>set<sp/>in<sp/>order<sp/>to<sp/>serve<sp/>static<sp/>assets<sp/>under<sp/>a<sp/>relative<sp/>URL.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[ci]:<sp/>https://about.gitlab.com/gitlab-ci/</highlight></codeline>
+<codeline><highlight class="normal">[doxygen]:<sp/>http://www.stack.nl/~dimitri/doxygen/index.html</highlight></codeline>
+<codeline><highlight class="normal">[install]:<sp/>http://www.stack.nl/~dimitri/doxygen/manual/install.html</highlight></codeline>
+<codeline><highlight class="normal">[documentation]:<sp/>http://www.stack.nl/~dimitri/doxygen/manual/index.html</highlight></codeline>
+<codeline><highlight class="normal">[userpages]:<sp/>https://docs.gitlab.com/ce/user/project/pages/introduction.html#user-or-group-pages</highlight></codeline>
+<codeline><highlight class="normal">[projpages]:<sp/>https://docs.gitlab.com/ce/user/project/pages/introduction.html#project-pages</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

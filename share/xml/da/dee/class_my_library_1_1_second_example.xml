@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="da/dee/class_my_library_1_1_second_example" kind="class" language="C++" prot="public">
+    <compoundname>MyLibrary::SecondExample</compoundname>
+    <includes refid="d2/d6e/_example_8h" local="no">Example.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="da/dee/class_my_library_1_1_second_example_1a3f8843d27356e7416236a8c2a0c762ed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string MyLibrary::SecondExample::foo</definition>
+        <argsstring>()</argsstring>
+        <name>foo</name>
+        <qualifiedname>MyLibrary::SecondExample::foo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mylib/Example.h" line="156" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mylib/Example.h" line="155" column="1" bodyfile="include/mylib/Example.h" bodystart="155" bodyend="157"/>
+    <listofallmembers>
+      <member refid="da/dee/class_my_library_1_1_second_example_1a3f8843d27356e7416236a8c2a0c762ed" prot="private" virt="non-virtual"><scope>MyLibrary::SecondExample</scope><name>foo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

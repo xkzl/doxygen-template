@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="d2/d46/group__disply" kind="group">
+    <compoundname>disply</compoundname>
+    <title>Display</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d2/d46/group__disply_1ga277af9a0b9a5b76b8d9d41218a0727ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displayMessage</definition>
+        <argsstring>(char *message)</argsstring>
+        <name>displayMessage</name>
+        <param>
+          <type>char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>A silly function that wraps printf() </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is simply to allow a demonstration of the doxygen markup for documenting functions. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string that is to be displayed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Always returns EXIT_SUCCESS if completed without error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/display.h" line="32" column="5" bodyfile="examples/display.c" bodystart="4" bodyend="7" declfile="examples/display.h" declline="32" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d2/d46/group__disply_1gafc60fb36321ac33109a111c3947433df" prot="public" static="no">
+        <name>HELLO_WORLD</name>
+        <initializer>&quot;Hello world!&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A hello world strgin. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/display.h" line="23" column="9" bodyfile="examples/display.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d46/group__disply_1ga9e28d90e086229117a7a49b6f5f12342" prot="public" static="no">
+        <name>GOODBYE_WORLD</name>
+        <initializer>&quot;Goodbye cruel world&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A goodbye world string. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/display.h" line="24" column="9" bodyfile="examples/display.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This provides a silly way to display messages. <simplesect kind="pre"><para>There are no prerequisites. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

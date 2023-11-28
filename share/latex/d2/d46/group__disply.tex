@@ -1,0 +1,76 @@
+\hypertarget{group__disply}{}\doxysection{Display}
+\label{group__disply}\index{Display@{Display}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__disply_gafc60fb36321ac33109a111c3947433df}{HELLO\+\_\+\+WORLD}}~\char`\"{}Hello world!\char`\"{}
+\item 
+\#define \mbox{\hyperlink{group__disply_ga9e28d90e086229117a7a49b6f5f12342}{GOODBYE\+\_\+\+WORLD}}~\char`\"{}Goodbye cruel world\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__disply_ga277af9a0b9a5b76b8d9d41218a0727ba}{display\+Message}} (char $\ast$message)
+\begin{DoxyCompactList}\small\item\em A silly function that wraps printf() \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This provides a silly way to display messages. \begin{DoxyPrecond}{Precondition}
+There are no prerequisites. 
+\end{DoxyPrecond}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__disply_ga9e28d90e086229117a7a49b6f5f12342}\label{group__disply_ga9e28d90e086229117a7a49b6f5f12342}} 
+\index{Display@{Display}!GOODBYE\_WORLD@{GOODBYE\_WORLD}}
+\index{GOODBYE\_WORLD@{GOODBYE\_WORLD}!Display@{Display}}
+\doxysubsubsection{\texorpdfstring{GOODBYE\_WORLD}{GOODBYE\_WORLD}}
+{\footnotesize\ttfamily \#define GOODBYE\+\_\+\+WORLD~\char`\"{}Goodbye cruel world\char`\"{}}
+
+A goodbye world string. 
+
+Definition at line \mbox{\hyperlink{display_8h_source_l00024}{24}} of file \mbox{\hyperlink{display_8h_source}{display.\+h}}.
+
+\mbox{\Hypertarget{group__disply_gafc60fb36321ac33109a111c3947433df}\label{group__disply_gafc60fb36321ac33109a111c3947433df}} 
+\index{Display@{Display}!HELLO\_WORLD@{HELLO\_WORLD}}
+\index{HELLO\_WORLD@{HELLO\_WORLD}!Display@{Display}}
+\doxysubsubsection{\texorpdfstring{HELLO\_WORLD}{HELLO\_WORLD}}
+{\footnotesize\ttfamily \#define HELLO\+\_\+\+WORLD~\char`\"{}Hello world!\char`\"{}}
+
+A hello world strgin. 
+
+Definition at line \mbox{\hyperlink{display_8h_source_l00023}{23}} of file \mbox{\hyperlink{display_8h_source}{display.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__disply_ga277af9a0b9a5b76b8d9d41218a0727ba}\label{group__disply_ga277af9a0b9a5b76b8d9d41218a0727ba}} 
+\index{Display@{Display}!displayMessage@{displayMessage}}
+\index{displayMessage@{displayMessage}!Display@{Display}}
+\doxysubsubsection{\texorpdfstring{displayMessage()}{displayMessage()}}
+{\footnotesize\ttfamily int display\+Message (\begin{DoxyParamCaption}\item[{char $\ast$}]{message }\end{DoxyParamCaption})}
+
+
+
+A silly function that wraps printf() 
+
+This is simply to allow a demonstration of the doxygen markup for documenting functions. 
+\begin{DoxyParams}{Parameters}
+{\em message} & A string that is to be displayed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Always returns EXIT\+\_\+\+SUCCESS if completed without error. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{display_8c_source_l00004}{4}} of file \mbox{\hyperlink{display_8c_source}{display.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00005\ \ \ \ \ printf(message);}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keywordflow}{return}\ EXIT\_SUCCESS;}
+\DoxyCodeLine{00007\ \}}
+
+\end{DoxyCode}

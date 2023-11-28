@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dd/d07/_some_class_8cpp" kind="file" language="C++">
+    <compoundname>SomeClass.cpp</compoundname>
+    <includes refid="d1/d38/_some_class_8h" local="yes">mylib/SomeClass.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>mylib/SomeClass.h</label>
+        <link refid="d1/d38/_some_class_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/SomeClass.cpp</label>
+        <link refid="dd/d07/_some_class_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d38/_some_class_8h" kindref="compound">mylib/SomeClass.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="d3/d39/mylib__global_8h_1abf91eccf01ab1de8e7df0cc124e607b6" kindref="member">MYLIB_NAMESPACE_BEGIN</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">SomeClass::SomeClass()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="d3/d39/mylib__global_8h_1a53f87e46dffe687b32a8f2854133541e" kindref="member">MYLIB_NAMESPACE_END</ref></highlight></codeline>
+    </programlisting>
+    <location file="src/SomeClass.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="d4/d68/display_8h" kind="file" language="C++">
+    <compoundname>display.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includedby refid="db/d85/display_8c" local="yes">examples/display.c</includedby>
+    <includedby refid="d0/d29/main_8c" local="yes">examples/main.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>examples/display.h</label>
+        <link refid="d4/d68/display_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>examples/display.c</label>
+        <link refid="db/d85/display_8c"/>
+      </node>
+      <node id="1">
+        <label>examples/display.h</label>
+        <link refid="d4/d68/display_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>examples/main.c</label>
+        <link refid="d0/d29/main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d2/d46/group__disply_1gafc60fb36321ac33109a111c3947433df" prot="public" static="no">
+        <name>HELLO_WORLD</name>
+        <initializer>&quot;Hello world!&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A hello world strgin. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/display.h" line="23" column="9" bodyfile="examples/display.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d46/group__disply_1ga9e28d90e086229117a7a49b6f5f12342" prot="public" static="no">
+        <name>GOODBYE_WORLD</name>
+        <initializer>&quot;Goodbye cruel world&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A goodbye world string. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/display.h" line="24" column="9" bodyfile="examples/display.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d2/d46/group__disply_1ga277af9a0b9a5b76b8d9d41218a0727ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int displayMessage</definition>
+        <argsstring>(char *message)</argsstring>
+        <name>displayMessage</name>
+        <param>
+          <type>char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>A silly function that wraps printf() </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is simply to allow a demonstration of the doxygen markup for documenting functions. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string that is to be displayed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Always returns EXIT_SUCCESS if completed without error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="examples/display.h" line="32" column="5" bodyfile="examples/display.c" bodystart="4" bodyend="7" declfile="examples/display.h" declline="32" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A silly file for printing messages. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This simply wraps a call to printf() and provides a couple of predefined strings to use as messages. <simplesect kind="author"><para>TM </para>
+</simplesect>
+<simplesect kind="copyright"><para>MIT License, see repository LICENSE file </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DISPLAY_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISPLAY_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="d2/d46/group__disply_1gafc60fb36321ac33109a111c3947433df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HELLO_WORLD<sp/><sp/><sp/><sp/>&quot;Hello<sp/>world!&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="24" refid="d2/d46/group__disply_1ga9e28d90e086229117a7a49b6f5f12342" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GOODBYE_WORLD<sp/><sp/>&quot;Goodbye<sp/>cruel<sp/>world&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d2/d46/group__disply_1ga277af9a0b9a5b76b8d9d41218a0727ba" kindref="member">displayMessage</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>message);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="examples/display.h"/>
+  </compounddef>
+</doxygen>
