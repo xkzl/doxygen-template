@@ -48,7 +48,7 @@ PROJECT_NAME           = "My Project"
 # could be handy for archiving the generated documentation or if some version
 # control system is used.
 
-PROJECT_NUMBER         = "0.1"
+PROJECT_NUMBER         = $(PROJECT_NUMBER)
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer a
@@ -79,7 +79,7 @@ OUTPUT_DIRECTORY       = share
 # control the number of sub-directories.
 # The default value is: NO.
 
-CREATE_SUBDIRS         = YES
+CREATE_SUBDIRS         = NO
 
 # Controls the number of sub-directories that will be created when
 # CREATE_SUBDIRS tag is set to YES. Level 0 represents 16 directories, and every
@@ -1307,7 +1307,7 @@ GENERATE_HTML          = YES
 # The default directory is: html.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_OUTPUT            = html
+HTML_OUTPUT            = $(PROJECT_NUMBER)
 
 # The HTML_FILE_EXTENSION tag can be used to specify the file extension for each
 # generated HTML page (for example: .htm, .php, .asp).
@@ -1393,7 +1393,8 @@ HTML_EXTRA_FILES       = assets/js/doxygen-awesome-darkmode-toggle.js \
                          assets/js/doxygen-awesome-paragraph-link.js \
                          assets/toggle-alternative-theme.js \
                          assets/js/doxygen-awesome-interactive-toc.js \
-                         assets/js/doxygen-awesome-tabs.js
+                         assets/js/doxygen-awesome-tabs.js \
+                         assets/js/doxygen-versioning.js
 
 # The HTML_COLORSTYLE tag can be used to specify if the generated HTML output
 # should be rendered with a dark or light theme.
@@ -1954,7 +1955,7 @@ GENERATE_LATEX         = NO
 # The default directory is: latex.
 # This tag requires that the tag GENERATE_LATEX is set to YES.
 
-LATEX_OUTPUT           = latex
+LATEX_OUTPUT           = $(PROJECT_NUMBER)/latex
 
 # The LATEX_CMD_NAME tag can be used to specify the LaTeX command name to be
 # invoked.
@@ -2239,7 +2240,7 @@ GENERATE_XML           = NO
 # The default directory is: xml.
 # This tag requires that the tag GENERATE_XML is set to YES.
 
-XML_OUTPUT             = xml
+XML_OUTPUT             = $(PROJECT_NUMBER)/xml
 
 # If the XML_PROGRAMLISTING tag is set to YES, doxygen will dump the program
 # listings (including syntax highlighting and cross-referencing information) to

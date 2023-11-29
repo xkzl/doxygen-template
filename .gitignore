@@ -36,4 +36,4 @@
 *.layout
 
 # Doxygen
-share/html
+share
