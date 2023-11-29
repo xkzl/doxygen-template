@@ -35,5 +35,9 @@
 *.dev
 *.layout
 
+**/.DS_Store
+
 # Doxygen
-share
+share/*/
+share/latest
+share/metadata.txt

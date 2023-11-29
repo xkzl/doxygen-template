@@ -1,3 +1,4 @@
+
 /**
 
 MIT License
@@ -24,15 +25,19 @@ SOFTWARE.
 
 */
 
-class DoxygenVersioning {
+class DetectGitCorner {
 
-    static init() {
+    static init(repositoryUrl) {
         window.addEventListener("DOMContentLoaded", () => {
-            fetch('../../../metadata.txt')
-            .then(response => response.text())
-            .then((data) => {
-                console.log(data)
-            })
+            
+            const imgEl = document.getElementById("git-corner-img");
+
+            let repository = new URL(repositoryUrl);
+            if(repository.hostname == "github.com") {
+                imgEl.src = "corner.github.svg";
+            } else {
+                imgEl.src = "corner.gitlab.svg";
+            }
         })
     }
 }

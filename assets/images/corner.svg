@@ -1,3 +1,41 @@
-<svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   fill="#1779c4"
+   viewBox="0 0 250 250"
+   width="75"
+   height="75"
+   aria-hidden="true"
+   version="1.1"
+   id="svg16"
+   sodipodi:docname="corner.svg"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs20" />
+  <sodipodi:namedview
+     id="namedview18"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="10.273511"
+     inkscape:cx="38.740406"
+     inkscape:cy="35.18758"
+     inkscape:window-width="1468"
+     inkscape:window-height="887"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg16" />
+  <path
+     d="M 0,0 C 85.37539,81.415499 171.40214,170.44093 250,250 V 0 Z"
+     id="path14"
+     sodipodi:nodetypes="cccc" />
 </svg>

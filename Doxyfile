@@ -1074,7 +1074,7 @@ EXAMPLE_RECURSIVE      = NO
 # that contain images that are to be included in the documentation (see the
 # \image command).
 
-IMAGE_PATH             = assets/images docs/images
+IMAGE_PATH             = docs/images
 
 # The INPUT_FILTER tag can be used to specify a program that doxygen should
 # invoke to filter for each input file. Doxygen will invoke the filter program
@@ -1391,10 +1391,16 @@ HTML_EXTRA_STYLESHEET  = assets/css/doxygen-awesome.css \
 HTML_EXTRA_FILES       = assets/js/doxygen-awesome-darkmode-toggle.js \
                          assets/js/doxygen-awesome-fragment-copy-button.js \
                          assets/js/doxygen-awesome-paragraph-link.js \
-                         assets/toggle-alternative-theme.js \
+                         assets/js/toggle-alternative-theme.js \
                          assets/js/doxygen-awesome-interactive-toc.js \
                          assets/js/doxygen-awesome-tabs.js \
-                         assets/js/doxygen-versioning.js
+                         assets/js/select-doxygen-version.js \
+                         assets/js/detect-git-corner.js
+
+HTML_EXTRA_FILES      += assets/images/corner.svg \
+                         assets/images/corner.gitlab.svg \
+                         assets/images/corner.github.svg
+                         
 
 # The HTML_COLORSTYLE tag can be used to specify if the generated HTML output
 # should be rendered with a dark or light theme.
